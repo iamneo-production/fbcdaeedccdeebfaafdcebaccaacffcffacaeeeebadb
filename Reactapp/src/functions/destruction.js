@@ -208,7 +208,7 @@ function UrlValidator() {
                                                                                 );
 }
 
-export default UrlValidator;v])
+export default UrlValidator;
                                                                                 }
                                                                           }
                                                                 }
