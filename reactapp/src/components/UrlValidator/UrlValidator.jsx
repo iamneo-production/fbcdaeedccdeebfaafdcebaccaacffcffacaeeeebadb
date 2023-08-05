@@ -8,13 +8,13 @@ let [disabled,setDisabled] = useState(false);
         return true;
   }
         return false;
-                                                   }
+ }
                                                     
-                                                        const convertToPath = (input) => {
-                                                                return '/' + input.split(" ").join("/");
-                                                                    }
+  const convertToPath = (input) => {
+     return '/' + input.split(" ").join("/");
+         }
                                                                      
-                                                                         const convertJson = (jsonString) => {
+   const convertJson = (jsonString) => {
                                                                                  const jsonObject = JSON.parse(jsonString);
                                                                                          const params = "?" + Object.entries(jsonObject).map((e) => e.join("=")).join("&");
                                                                                                  return params;
