@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react';
  
  const UrlValidator = () => {
   
-      let [disabled,setDisabled] = useState(false);
-       
-           const isValidateDomain = (d) => {
-                   if(d.startsWith("www.") && d.endsWith(".com")) {
-                               return true;
-                                       }
-                                               return false;
+let [disabled,setDisabled] = useState(false);
+       const isValidateDomain = (d) => {
+        if(d.startsWith("www.") && d.endsWith(".com")) {
+        return true;
+  }
+        return false;
                                                    }
                                                     
                                                         const convertToPath = (input) => {
